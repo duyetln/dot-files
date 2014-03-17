@@ -23,4 +23,7 @@ set undolevels=1000
 set backspace=indent,eol,start
 
 syntax on
+set background=dark
 set t_Co=256
+
+colorscheme hybrid
