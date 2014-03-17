@@ -1,0 +1,91 @@
+# conky configuration
+#
+# The list of variables has been removed from this file in favour
+# of keeping the documentation more maintainable.
+# Check http://conky.sf.net for an up-to-date-list.
+#
+# For ideas about how to modify conky, please see:
+# http://crunchbanglinux.org/forums/topic/59/my-conky-config/
+#
+# For help with conky, please see:
+# http://crunchbanglinux.org/forums/topic/2047/conky-help/
+#
+# Enjoy! :)
+##############################################
+# Settings
+##############################################
+background yes
+use_xft yes
+xftfont DejaVu Sans Mono:book:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_color 000000
+own_window_type desktop
+#own_window_argb_visual yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 300
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color ffffff
+default_shade_color 000000
+default_outline_color 828282
+alignment top_right
+gap_x 12
+gap_y 56
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+##############################################
+#  Output
+##############################################
+TEXT
+S Y S T E M    I N F O
+${hr}
+${color slate grey}Host$color $alignr$nodename
+${color slate grey}Uptime$color $alignr$uptime
+${color slate grey}Kernel$color $alignr$kernel
+
+S T A T S
+${hr}
+${color slate grey}RAM$color $alignr$mem/$memmax
+$memperc% $alignr${membar 5,180} 
+${color slate grey}Swap$color $alignr$swap/$swapmax
+$swapperc% $alignr${swapbar 5,180}
+${color slate grey}/home$color $alignr${fs_used /home}/${fs_size /home}
+${fs_used_perc /home}% $alignr${fs_bar 5,180 /home}
+${color slate grey}CPU$color
+${cpu}% $alignr${cpubar 5,180}
+
+${color slate grey}Highest CPU$color
+${color #ddaa00}${top name 1} $alignr${top cpu 1}%$color
+${top name 2} $alignr${top cpu 2}%
+${top name 3} $alignr${top cpu 3}%
+
+${color slate grey}Highest RAM$color
+${color #ddaa00}${top_mem name 1} $alignr${top_mem mem 1}%$color
+${top_mem name 2} $alignr${top_mem mem 2}%
+${top_mem name 3} $alignr${top_mem mem 3}%
+
+S H O R T C U T    K E Y S
+${hr}
+Alt+F2$alignr Run Dialog
+Alt+F3$alignr Alt Menu
+Super+Space$alignr Main Menu
+Super+Tab$alignr Client Menu
+Super+t$alignr Terminal
+Super+f$alignr File Manager
+Super+e$alignr Editor
+Super+m$alignr Media Player
+Super+w$alignr Web Browser
+Super+h$alignr Task Manager
+Super+l$alignr Lock Screen
+Super+v$alignr Volume Control
+Super+x$alignr Logout
+PrtSc$alignr Screenshot
