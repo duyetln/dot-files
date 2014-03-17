@@ -71,7 +71,12 @@ export TERM=xterm-256color
 
 alias be="bundle exec"
 alias irbs="irb --simple-prompt"
+
 alias gf="git fetch"
 alias gc="git checkout"
+alias gpush="git push origin"
+alias gm="git merge"
+alias gst="git status"
+
 alias ls="ls -al --color"
 
