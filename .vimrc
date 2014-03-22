@@ -2,7 +2,6 @@ set number
 set mouse=a
 set linebreak
 set textwidth=100
-set showmatch
 set visualbell
  
 set hlsearch
@@ -18,6 +17,7 @@ set smarttab
 set softtabstop=2
  
 set ruler
+set showcmd 
  
 set undolevels=1000
 set backspace=indent,eol,start
