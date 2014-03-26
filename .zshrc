@@ -79,4 +79,5 @@ alias gm="git merge"
 alias gst="git status"
 
 alias ls="ls -al --color"
+alias grep="grep --color=auto"
 
