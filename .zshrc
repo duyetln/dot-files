@@ -24,6 +24,7 @@ plugins=(git)
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$HOME/.rbenv/bin:$PATH"
 export GREP_OPTIONS='--color=auto'
 export TERM='xterm-256color'
 
